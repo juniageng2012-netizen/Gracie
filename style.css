@@ -1,0 +1,338 @@
+/* ============================================
+   GRACIE'S WEBSITE - STYLESHEET
+   All the colors and styling to make Gracie's
+   website cute and colorful!
+   ============================================ */
+
+/* GENERAL STYLES - Apply to the whole page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #fff9e6 0%, #ffe6f0 100%);
+    min-height: 100vh;
+}
+
+/* ============================================
+   HERO SECTION - The welcome area at the top
+   ============================================ */
+.hero {
+    background: linear-gradient(135deg, #ff69b4 0%, #ffa500 50%, #ffb6c1 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content .tagline {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero-content .intro {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* ============================================
+   ABOUT ME SECTION - Information about Gracie
+   ============================================ */
+.about {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    margin: 40px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.about-text p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.about-text strong {
+    color: #ff69b4;
+}
+
+.about-facts h3 {
+    color: #ffa500;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.about-facts ul {
+    list-style: none;
+}
+
+.about-facts li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    color: #555;
+    border-bottom: 2px solid #ffe6f0;
+}
+
+/* Responsive: Stack on mobile */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* ============================================
+   PHOTO GALLERY SECTION - Show Gracie's photos
+   ============================================ */
+.gallery {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.gallery-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.photo-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
+}
+
+.photo-placeholder {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #ffe6f0 0%, #fff9e6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+.photo-card p {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.gallery-note {
+    text-align: center;
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/* ============================================
+   PROJECTS SECTION - Gracie's adventures
+   ============================================ */
+.projects {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #fff9e6 0%, #ffe6f0 100%);
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #ffa500;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #ff69b4;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.project-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ============================================
+   VIDEO SHOWCASE SECTION - Watch Gracie!
+   ============================================ */
+.videos {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    margin: 40px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.videos h2 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.video-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.video-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 3px solid #ff69b4;
+}
+
+.video-card:hover {
+    transform: scale(1.05);
+}
+
+.video-placeholder {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #ffb3d9 0%, #ffa500 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+.video-card p {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.video-note {
+    text-align: center;
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/* ============================================
+   FOOTER - The bottom of the page
+   ============================================ */
+footer {
+    background: linear-gradient(135deg, #ff69b4 0%, #ffa500 100%);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - Make it work on mobile
+   ============================================ */
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content .tagline {
+        font-size: 1.1rem;
+    }
+
+    .about h2,
+    .gallery h2,
+    .projects h2,
+    .videos h2 {
+        font-size: 2rem;
+    }
+
+    .photo-grid,
+    .projects-grid,
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
