@@ -23,7 +23,7 @@ body {
    HERO SECTION - The welcome area at the top
    ============================================ */
 .hero {
-    background: url('gracie.webp') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('gracie.webp') center/cover no-repeat;
     color: white;
     padding: 80px 20px;
     text-align: center;
@@ -178,53 +178,6 @@ body {
 }
 
 /* ============================================
-   PROJECTS SECTION - Gracie's adventures
-   ============================================ */
-.projects {
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #fff9e6 0%, #ffe6f0 100%);
-    max-width: 1000px;
-    margin: 40px auto;
-}
-
-.projects h2 {
-    font-size: 2.5rem;
-    color: #ff69b4;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-
-.project-card {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #ffa500;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-card h3 {
-    color: #ff69b4;
-    margin-bottom: 15px;
-    font-size: 1.3rem;
-}
-
-.project-card p {
-    color: #666;
-    line-height: 1.6;
-}
-
-/* ============================================
    VIDEO SHOWCASE SECTION - Watch Gracie!
    ============================================ */
 .videos {
@@ -325,13 +278,11 @@ footer p {
 
     .about h2,
     .gallery h2,
-    .projects h2,
     .videos h2 {
         font-size: 2rem;
     }
 
     .photo-grid,
-    .projects-grid,
     .video-grid {
         grid-template-columns: 1fr;
     }
